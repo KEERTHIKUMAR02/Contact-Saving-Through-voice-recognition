@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_of_ui"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Enter Country Code"
+            />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Enter number"
+      />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Enter Name"/>
+
+
+    <ImageView
+        android:id="@+id/iv_mic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/micimage"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/float_button"
+        app:backgroundTint="@color/white"
+        android:layout_margin="20dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View"
+            android:elevation="16dp"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+</RelativeLayout>
